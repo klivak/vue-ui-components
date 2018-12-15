@@ -1,13 +1,11 @@
 <template>
     <section class="section section-banner">
-sfsdf
+        banner
     </section>
 </template>
 
 <script>
-    export default {
-
-    }
+    export default {}
 </script>
 
 <style scoped>

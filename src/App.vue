@@ -1,21 +1,19 @@
 <template>
-    <div id="app">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <Content/>
-        info
-    </div>
+  <div id="app">
+    <header>
+      <div id="nav">
+        <router-link to="/">Home</router-link> |
+        <router-link to="/banner">Banner</router-link>
+      </div>
+    </header>
+    <main>
+      <router-view/>
+    </main>
+    <footer>
+
+    </footer>
+  </div>
 </template>
-
-<script>
-    import Content from './components/Content'
-
-    export default {
-        name: 'app',
-        components: {
-            Content
-        }
-    }
-</script>
 
 <style lang="scss">
     @import "assets/css/index.scss";
