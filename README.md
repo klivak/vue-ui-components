@@ -1,4 +1,22 @@
 # vue-ui-components
+Useful components for websites that use full vue.js power.
+
+---
+
+It will include components:
+- banner;
+- accordion;
+- modal;
+- slider;
+- gallery;
+- form;
+- buttons;
+- inputs;
+- table;
+- header;
+- footer.
+
+
 
 ## Project setup
 ```
@@ -14,16 +32,3 @@ yarn run serve
 ```
 yarn run build
 ```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
