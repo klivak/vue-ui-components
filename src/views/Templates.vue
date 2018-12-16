@@ -13,6 +13,16 @@
         <modal :btn-text="modal.buttonText"
         ></modal>
 
+        <hr>
+
+        <gallery
+                :title="gallery.title"
+                :description="gallery.description"
+                :images="gallery.images"
+
+        >
+        </gallery>
+
     </div>
 </template>
 
@@ -23,6 +33,7 @@
 
     import banner from '@/components/sections/Banner';
     import modal from '@/components/sections/Modal';
+    import gallery from '@/components/sections/Gallery';
 
     export default {
         data() {
@@ -33,6 +44,11 @@
                 bannerDescription: data.banner.description,
                 modal: {
                     buttonText: data.modal.btnText
+                },
+                gallery: {
+                    title: data.gallery.title,
+                    description: data.gallery.description,
+                    images: data.gallery.images
                 }
             }
         },
@@ -41,7 +57,8 @@
         },
         components: {
             banner,
-            modal
+            modal,
+            gallery
         }
     }
 </script>

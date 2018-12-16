@@ -6,5 +6,31 @@
   },
   "modal": {
     "btnText": "Open modal dialog"
+  },
+  "gallery": {
+    "title": "Simple Gallery of images",
+    "description": "This is a very simple gallery of images.",
+    "images": [
+      {
+        "id": 1,
+        "title": "Image 1",
+        "src": "https://c1.staticflickr.com/6/5464/9016223878_c84de3f179_c.jpg",
+        "thumbnail": "https://c1.staticflickr.com/6/5464/9016223878_c84de3f179_n.jpg",
+        "comments": [
+          {
+            "id": 1,
+            "name": "Sergey",
+            "message": "It was cool, wanna more"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Image 2",
+        "src": "https://c1.staticflickr.com/8/7339/12449747893_7d1b9d98f8.jpg",
+        "thumbnail": "https://c1.staticflickr.com/8/7339/12449747893_7d1b9d98f8_n.jpg",
+        "comments": []
+      }
+    ]
   }
 }
