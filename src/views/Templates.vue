@@ -2,10 +2,9 @@
     <div class="page page-templates">
         <h1>This is an templates page</h1>
 
-        <banner bg-image="'/static/images/bg-image-min.jpg'"
-                title="Banner"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quam tellus, lacinia vel
-                neque a, viverra rutrum sem. Nulla gravida."
+        <banner :bg-image="bannerImage"
+                :title="bannerTitle"
+                :description="bannerDescription"
         ></banner>
 
     </div>
@@ -13,11 +12,22 @@
 
 <script>
 
+    import data from '../data'
+    // const data = require('../data.json');
+
     import banner from '@/components/sections/Banner'
 
     export default {
         data() {
-            return {}
+            return {
+                data,
+                bannerImage: data.banner.image,
+                bannerTitle: data.banner.title,
+                bannerDescription: data.banner.description,
+            }
+        },
+        mounted() {
+            console.log(this.bannerImage);
         },
         components: {
             banner
