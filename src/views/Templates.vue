@@ -5,7 +5,13 @@
         <banner :bg-image="bannerImage"
                 :title="bannerTitle"
                 :description="bannerDescription"
+                class="d-none"
         ></banner>
+
+        <hr>
+
+        <modal :btn-text="modal.buttonText"
+        ></modal>
 
     </div>
 </template>
@@ -15,7 +21,8 @@
     import data from '../data'
     // const data = require('../data.json');
 
-    import banner from '@/components/sections/Banner'
+    import banner from '@/components/sections/Banner';
+    import modal from '@/components/sections/Modal';
 
     export default {
         data() {
@@ -24,13 +31,17 @@
                 bannerImage: data.banner.image,
                 bannerTitle: data.banner.title,
                 bannerDescription: data.banner.description,
+                modal: {
+                    buttonText: data.modal.btnText
+                }
             }
         },
         mounted() {
-            console.log(this.bannerImage);
+            console.log('data', data);
         },
         components: {
-            banner
+            banner,
+            modal
         }
     }
 </script>

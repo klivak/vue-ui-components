@@ -3,5 +3,8 @@
     "image": "https://c1.staticflickr.com/6/5589/14708506500_b757bd46a3_k.jpg",
     "title": "Banner",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quam tellus, lacinia vel\n                neque a, viverra rutrum sem. Nulla gravida."
+  },
+  "modal": {
+    "btnText": "Open modal dialog"
   }
 }

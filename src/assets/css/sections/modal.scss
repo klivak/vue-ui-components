@@ -1,0 +1,57 @@
+.section-modal {
+
+  .btn-open {
+
+    &:hover {
+      cursor: pointer;
+    }
+
+  }
+
+  .modal-overlay {
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+
+    &.active {
+      display: flex;
+
+    }
+  }
+
+  .modal-content {
+    position: relative;
+
+    width: 100%;
+    background: #fff;
+    max-width: 600px;
+    padding: 20px;
+
+    .btn-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+  }
+
+  .modal-header {
+    margin-bottom: 10px;
+
+    h3 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+
+}

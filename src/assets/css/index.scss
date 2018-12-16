@@ -1,8 +1,10 @@
+@import "global";
 @import "page";
 @import "section";
 
 /* sections */
 @import "sections/banner";
+@import "sections/modal";
 
 /* components */
 @import "components/header";
